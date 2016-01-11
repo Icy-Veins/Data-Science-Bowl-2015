@@ -1,0 +1,88 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+
+\onehalfspacing
+
+\title{Transforming How We Diagnose Heart Disease}
+\author{Kyle Daruwalla and Alvin (Yuxanxiang) Ye}
+\date{\today}
+
+\begin{document}
+	
+\maketitle
+
+\section{Project Details}
+
+\subsection{Overview}
+In the medical community, the popular method for diagnosing heart disease is analyzing patient magnetic resonance images (MRIs). However, this can be a time consuming process for doctors that takes away from valuable patient time. Our goal is to make this process simpler and more efficient by using machine learning and image recognition.
+
+\subsection{Objectives}
+In order to concisely describe the project goals, we have created the following project objectives:
+\begin{enumerate}
+	\item Analyze MRIs using image recognition to identify regions of interest (ROIs). Regions of interest are defined as a single chamber of the heart.
+	\item Calculate the total volume of a chamber of the heart at the beginning and middle of a heart beat.
+	\item Derive the ejection fraction (EF) using the total volumes. The EF represents the percentage blood ejected from the left ventricle with each heartbeat.
+	\item Use machine learning (decision trees and neural networks) to predict heart disease risk based on the total volumes and EF of the training data.
+\end{enumerate}
+
+\section{Team}
+\textbf{Team Leader:} Kyle Daruwalla
+\textbf{Team Member(s):} Alvin Ye
+
+\section{Project Breakdown}
+
+\subsection{Tasks}
+\begin{center}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		Task ID & Description & Assigned To & Difficulty \\
+		\hline
+		T0 & Play with training data to find how doctors diagnose patients & Kyle & Minor \\
+		T1 & Understanding image recognition example algorithm & Alvin & Normal \\
+		T2 & Understanding deep learning example algorithm & Kyle & Normal \\
+		T3 & Apply image processing to full data set & Alvin & Severe \\
+		T4 & Design a decision tree for data generated & Kyle & Normal \\
+		T5 & Apply deep learning algorithms to subset of data & Kyle & Severe \\
+		T6 & Refine the decision tree for better results & Alvin & Normal \\
+		T7 & Train deep learning algorithm on training data & Kyle & Normal \\
+		T8 & Refine deep learning algorithm & Alvin & Severe \\
+		\hline
+	\end{tabular}
+\end{center}
+
+\subsection{Timeline}
+Below is the milestone timeline and task organization.
+\begin{center}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		Milestone ID & Description & Due Date \\
+		\hline
+		M0 & Data Acquisition Report & 15 Jan 2016 \\
+		M1 & Preliminary Results Report & 29 Jan 2016 \\
+		M2 & Project Draft Report & 19 Feb 2016 \\
+		M3 & Final Report & 26 Feb 2016 \\
+		M4 & First Kaggle Submission & 29 Feb 2016 \\
+		M5 & Final Kaggle Submission & 14 Mar 2016 \\
+		\hline
+	\end{tabular}
+\end{center}
+\begin{center}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		Task ID & Milestone ID & Repeating? & First Due Date \\
+		\hline
+		T0 & M0 & No & 13 Jan 2016 \\
+		T1 & M0 & No & 15 Jan 2016 \\
+		T2 & M0 & No & 15 Jan 2016 \\
+		T3 & M1 & No & 20 Jan 2016 \\
+		T4 & M1 & No & 20 Jan 2016 \\
+		T5 & M2 & Weekly & 30 Jan 2016 \\
+		T6 & M2/M3/M4/M5 & Weekly & 30 Jan 2016 \\
+		T7 & M3/M4/M5 & No & 19 Feb 2016 \\
+		T8 & M4/M5 & Weekly & 24 Feb 2016 \\
+		\hline
+	\end{tabular}
+\end{center}
+
+\end{document}
