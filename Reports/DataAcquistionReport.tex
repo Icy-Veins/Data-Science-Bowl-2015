@@ -15,9 +15,11 @@
 \section{Current Status}
 Our team has made some progress in acquiring the necessary data. Since the project is centered around a Kaggle competition, the data is readily available to registered teams. We have submitted our team to Kaggle and downloaded a compressed format of the data.
 
-In its compressed form, the data is 2GB, but when uncompressed, it is 40GB. As a result, we expect to utilize one of the many servers on campus to store and analyze the data. Darryl Mouck, the CSSE system administrator is building a new 64 core machine, so we are going to ask him if we can use that.
+There are two sets of data, the validation data and the training data. The compressed format of the validation data is 5.16GB; after uncompressing, it is 13GB. Similarly, the compressed format of the training data is 12.71GB, and the uncompressed format of it is 32GB. As a result, we will most likely use one of Rose-Hulman's servers. 
+
+The dataset consists of several directories, one for each patient. Within the directory for each patient, there are a large number of DICOM format images. Each image can be a two-chamber, four-chamber, or short-axis stack view of the patient's heart. In total, the dataset contains over 1,000 complete cardiac MRI series.
 
 \section{Future Work}
-
+In reality, the data analysis is not done on the cardiac images themselves, but rather the information gathered from them through image processing. So, the actual data set is the total volume of each chamber of the heart and the ejection fraction at the start and middle of a heartbeat. Thus, we still need to apply the Fourier-based image processing provided by Kaggle to each image. This will give us a text-based (most likely CSV) data set to analyze.
 
 \end{document}
