@@ -94,3 +94,6 @@ target/
 *.xdy
 *.tdo
 *.pdf
+
+# Output #
+Dataset
